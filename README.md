@@ -3,13 +3,12 @@ Link to the MLO: https://fivem.gabzv.com/package/4724734 </br>
 Link to the vehicle: https://www.gta5-mods.com/vehicles/vapid-speedo-express-add-on-liveries
 
 ## Dependencies:
-* qb-core
-* qb-target
-* qb-management
-* qb-input
-* qb-menu
+* qbx-core
+* ox-target
+* qbx-management
+* ox-lib
 
-## Add this to your @qb-core/shared/items.lua
+## Add this to your @qbx-core/shared/items.lua
 ```
 -- UwuU Cafe Items
     ["shiny_wasabi"]                 	= {["name"] = "shiny_wasabi",            		["label"] = "Shiny wasabi",             		["weight"] = 150,         ["type"] = "item",         ["image"] = "shiny_wasabi.png",             		["unique"] = false,     ["useable"] = true,     ["shouldClose"] = false,   ["combinable"] = nil, ["description"] = ""},
@@ -90,30 +89,30 @@ Link to the vehicle: https://www.gta5-mods.com/vehicles/vapid-speedo-express-add
 
 
 ```
-## Add this to your @qb-core/shared/jobs.lua 
+## Add this to your @qbx-core/shared/jobs.lua 
 ```
 ['uwu'] = {
     label = 'UwU Cafe',
     defaultDuty = true,
     offDutyPay = false,
     grades = {
-        ['0'] = {
+        [0] = {
             name = 'Trainee',
             payment = 50
         },
-        ['1'] = {
+        [1] = {
             name = 'Employee',
             payment = 75
         },
-        ['2'] = {
+        [2] = {
             name = 'Advanced',
             payment = 125
         },
-        ['3'] = {
+        [3] = {
             name = 'Manager',
             payment = 150
         },
-        ['4'] = {
+        [4] = {
             name = 'Owner',
             isboss = true,
             payment = 150
