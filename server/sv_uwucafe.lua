@@ -2,7 +2,7 @@ local QBCore = exports['qb-core']:GetCoreObject()
 
 RegisterNetEvent('qb-uwucafe:server:makeOmurice', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'onion', 1)
     exports.ox_inventory:RemoveItem(src,'chicken_thighs', 1)
     exports.ox_inventory:RemoveItem(src,'virgin_olive_oil', 1)
@@ -14,7 +14,7 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makeCurrye', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'onion', 1)
     exports.ox_inventory:RemoveItem(src,'rice', 1)
     exports.ox_inventory:RemoveItem(src,'chicken_thighs', 1)
@@ -24,7 +24,7 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makeSando', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'pullman_bread', 1)
     exports.ox_inventory:RemoveItem(src,'chicken_breast', 1)
     exports.ox_inventory:RemoveItem(src,'egg', 1)
@@ -36,42 +36,42 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makeSteak', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'steak', 1)
     exports.ox_inventory:AddItem(src,'hamburg_stake', 1)
 end)
 
 RegisterNetEvent('qb-uwucafe:server:cleanTallGlass', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'glass_tall_dirty', 1)
     exports.ox_inventory:AddItem(src,'glass_tall', 1)
 end)
 
 RegisterNetEvent('qb-uwucafe:server:cleanBowl', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'bar_bowl_dirty', 1)
     exports.ox_inventory:AddItem(src,'bar_bowl', 1)
 end)
 
 RegisterNetEvent('qb-uwucafe:server:cleanPlate', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'plate_dirty', 1)
     exports.ox_inventory:AddItem(src,'plate', 1)
 end)
 
 RegisterNetEvent('qb-uwucafe:server:cleanCup', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'cup_dirty', 1)
     exports.ox_inventory:AddItem(src,'cup', 1)
 end)
 
 RegisterNetEvent('qb-uwucafe:server:makeCoffee1', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'matcha_powder', 1)
     exports.ox_inventory:RemoveItem(src,'milk', 1)
     exports.ox_inventory:RemoveItem(src,'brewed_coffee', 1)
@@ -80,7 +80,7 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makeCoffee2', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'sugar', 1)
     exports.ox_inventory:RemoveItem(src,'cocoa_powder', 1)
     exports.ox_inventory:RemoveItem(src,'milk', 1)
@@ -90,7 +90,7 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makeCoffee3', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'sugar', 1)
     exports.ox_inventory:RemoveItem(src,'cocoa_powder', 1)
     exports.ox_inventory:RemoveItem(src,'milk', 1)
@@ -100,7 +100,7 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makeTea1', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'dried_boba_tapioca_pearls', 1)
     exports.ox_inventory:RemoveItem(src,'sugar', 1)
     exports.ox_inventory:RemoveItem(src,'milk', 1)
@@ -111,7 +111,7 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makeTea2', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'lemon', 1)
     exports.ox_inventory:RemoveItem(src,'sugar', 1)
     exports.ox_inventory:RemoveItem(src,'mint', 1)
@@ -130,7 +130,7 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makeSoup', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'noodles', 1)
     exports.ox_inventory:RemoveItem(src,'onion', 1)
     exports.ox_inventory:RemoveItem(src,'butter', 1)
@@ -141,7 +141,7 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makeChocolate', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'sugar', 1)
     exports.ox_inventory:RemoveItem(src,'cocoa_powder', 1)
     exports.ox_inventory:RemoveItem(src,'milk', 1)
@@ -150,7 +150,7 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makeShortcake', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'flour', 1)
     exports.ox_inventory:RemoveItem(src,'baking_powder', 1)
     exports.ox_inventory:RemoveItem(src,'strawberry', 1)
@@ -162,7 +162,7 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makeCream', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'rice_flour', 1)
     exports.ox_inventory:RemoveItem(src,'sugar', 1)
     exports.ox_inventory:AddItem(src,'meowchi_mochi_ice_cream', 1)
@@ -170,7 +170,7 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makeCake', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'sugar', 1)
     exports.ox_inventory:RemoveItem(src,'flour', 1)
     exports.ox_inventory:RemoveItem(src,'egg', 1)
@@ -181,7 +181,7 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makeParfait', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'milk', 1)
     exports.ox_inventory:RemoveItem(src,'strawberry', 1)
     exports.ox_inventory:RemoveItem(src,'butter', 1)
@@ -191,7 +191,7 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makeCupcake', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'baking_powder', 1)
     exports.ox_inventory:RemoveItem(src,'egg', 1)
     exports.ox_inventory:RemoveItem(src,'sugar', 1)
@@ -202,7 +202,7 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makeCupcake2', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'milk', 1)
     exports.ox_inventory:RemoveItem(src,'egg', 1)
     exports.ox_inventory:RemoveItem(src,'butter', 1)
@@ -211,7 +211,7 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makeCookie', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'egg', 1)
     exports.ox_inventory:RemoveItem(src,'lemon', 1)
     exports.ox_inventory:RemoveItem(src,'baking_powder', 1)
@@ -220,7 +220,7 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makePancakes', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'flour', 1)
     exports.ox_inventory:RemoveItem(src,'milk', 1)
     exports.ox_inventory:RemoveItem(src,'egg', 1)
@@ -229,7 +229,7 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makeMacaroonBrown', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'flour', 1)
     exports.ox_inventory:RemoveItem(src,'egg', 1)
     exports.ox_inventory:RemoveItem(src,'sugar', 1)
@@ -239,7 +239,7 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makeMacaroonPink', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'flour', 1)
     exports.ox_inventory:RemoveItem(src,'egg', 1)
     exports.ox_inventory:RemoveItem(src,'sugar', 1)
@@ -249,7 +249,7 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makeMacaroonTurquoise', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'flour', 1)
     exports.ox_inventory:RemoveItem(src,'egg', 1)
     exports.ox_inventory:RemoveItem(src,'sugar', 1)
@@ -259,7 +259,7 @@ end)
 
 RegisterNetEvent('qb-uwucafe:server:makeMacaroonGreen', function()
     local src = source
-    if not Player then return end
+    
     exports.ox_inventory:RemoveItem(src,'flour', 1)
     exports.ox_inventory:RemoveItem(src,'egg', 1)
     exports.ox_inventory:RemoveItem(src,'sugar', 1)
@@ -273,175 +273,6 @@ RegisterNetEvent('qb-uwucafe:server:takeIce', function()
     exports.ox_inventory:AddItem(src,'ice', 1)
 end)
 
-QBCore.Functions.CreateUseableItem('gingerkitty_cookie', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Eat', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('kira_kira_currye', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Eat', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('om_nom_omurice', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Eat', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('dragos_fire_cupcake', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Eat', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('ballbarry_cupcake', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Eat', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('purrfect_parfait', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Eat', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('oxygen_cake', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Eat', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('meowchi_mochi_ice_cream', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Eat', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('strawberry_shortcake', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Eat', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('awwdorable_valentines_chocolate', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Eat', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('warm_chicken_noodle', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Eat', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('rice_balls', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Eat', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('doki_doki_pancakes', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Eat', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('hamburg_stake', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Eat', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('sugoi_katsu_sando', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Eat', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('cat_macaroon_pink', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Eat', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('cat_macaroon_green', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Eat', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('cat_macaroon_turquoise', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Eat', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('cat_macaroon_brown', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Eat', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('sweet_herbal_tea', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Drink', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('booba_milk_tea_2', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Drink', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('lovely_hot_chocolate', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Drink', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('hot_chocolate', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Drink', source, item.name)
-    end
-end)
-
-QBCore.Functions.CreateUseableItem('matcha_coffee', function(source, item)
-    local Player = QBCore.Functions.GetPlayer(source)
-	if exports.ox_inventory:RemoveItem(src,item.name, 1, item.slot) then
-        TriggerClientEvent('qb-uwucafe:client:Drink', source, item.name)
-    end
-end)
-
-
 RegisterNetEvent('qb-uwucafe:server:billPlayer', function(playerId, amount)
     local biller = QBCore.Functions.GetPlayer(source)
     local billed = QBCore.Functions.GetPlayer(tonumber(playerId))
@@ -453,7 +284,7 @@ RegisterNetEvent('qb-uwucafe:server:billPlayer', function(playerId, amount)
                 billed.Functions.RemoveMoney('bank', amount)
                 TriggerClientEvent('QBCore:Notify', source, 'You charged a customer.', 'success')
                 TriggerClientEvent('QBCore:Notify', billed.PlayerData.source, 'You have been charged $'..amount..' for your order at UwU Cafe.')
-                exports['qb-management']:AddMoney('uwu', amount)
+                exports.pefcl:addBankBalanceByIdentifier(source, { identifier = 'uwu', amount = amount, message = 'Purchase' })
                 else
                     TriggerClientEvent('QBCore:Notify', source, 'Must be a valid amount above 0.', 'error')
                 end
@@ -503,10 +334,16 @@ end)
 
 exports.qbx_management:RegisterBossMenu({
     groupName = 'uwu',
-    coords = vec3(1238.41, -348.82, 69.08),
+    coords = vec3(-577.57, -1067.57, 26.61),
     size = vec3(1.5, 1.5, 1.5),
     rotation = 39.68,
     type = 'job',
     stashSlots = 100,
     stashWeight = 4000000,
+})
+
+-- SHOP --
+exports.ox_inventory:RegisterShop('uwuShop', {
+    name = 'Ingredient Shop',
+    inventory = Config.Items
 })

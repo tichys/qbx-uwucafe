@@ -218,3 +218,23 @@ RegisterNetEvent("qb-uwucafe:bill", function()
         TriggerServerEvent("qb-uwucafe:server:billPlayer", bill.citizenid, bill.billprice)
     end
 end)
+
+-- SHOP --
+exports.ox_target:addBoxZone({
+    coords = vector3(-606.43, -1095.77, 22.32),
+    size = vec3(1, 1, 1),
+    rotation = 45,
+    options = {
+        {
+            name = 'uwu_shop',
+            icon = 'fa-solid fa-shopping-basket',
+            label = 'Ingredient Shop',
+            groups = {
+                Config.Jobname
+            },
+            onSelect = function ()
+                exports.ox_inventory:openInventory('shop', {type = 'uwuShop'})
+            end
+        },
+    }
+})
